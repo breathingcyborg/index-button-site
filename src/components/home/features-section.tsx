@@ -1,7 +1,4 @@
-import { GITHUB_REPO_URL, YOUTUBE_PLAYLIST_URL } from "@/constants";
 import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
-import youtube from '@/assets/yt_icon_rgb.png';
 
 export function FeaturesSection() {
     const cardClasses = 'p-12 bg-card rounded-lg'
@@ -45,31 +42,6 @@ export function FeaturesSection() {
                     <p className="mt-8">
                         Unlike others, we don't require owner access to your Search Console account.
                     </p>
-                </li>
-                <li className={cn(cardClasses, "col-span-3 lg:col-span-2")}>
-                    <h3 className={cn(titleClass, "flex gap-4 items-center")}>
-                        <img src={youtube} className="w-12 h-auto" />
-                        Youtube Tutorials
-                    </h3>
-                    <p className="mt-8">
-                        A YouTube playlist that includes everything that helps you get start with this extension.  From setting up google search console to indexing single or multiple pages.
-                    </p>
-                    <div className="mt-8">
-                        <a className={buttonVariants({ variant: 'white', size: 'lg' })} href={YOUTUBE_PLAYLIST_URL}>
-                            Watch On Youtube
-                        </a>
-                    </div>
-                </li>
-                <li className={cn(cardClasses, "col-span-3 lg:col-span-1")}>
-                    <h3 className={titleClass}>Need Help?</h3>
-                    <p className="mt-8">
-                        You can create an issue on git-hub if you need help. Or you can request new features.
-                    </p>
-                    <div className="mt-8">
-                        <a className={buttonVariants({ variant: 'white', size: 'lg' })} href={GITHUB_REPO_URL}>
-                            Create Github Issue
-                        </a>
-                    </div>
                 </li>
             </ul>
         </div>

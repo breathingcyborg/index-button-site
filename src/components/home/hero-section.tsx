@@ -1,4 +1,4 @@
-import { CHROME_EXTENSION_URL, GITHUB_REPO_URL } from "@/constants";
+import { GITHUB_REPO_URL } from "@/constants";
 import { buttonVariants } from "@/components/ui/button";
 import heroImage from '@/assets/home-hero.png';
 
@@ -17,10 +17,7 @@ export function HomeHeroSection() {
                         No more waiting for weeks after submitting your sitemap.
                     </p>
                     <div className="flex-wrap lg:flex-nowrap justify-center lg:justify-start flex flex-row gap-8 mt-12">
-                        <a href={CHROME_EXTENSION_URL} className={buttonVariants({ variant: 'white', size: 'lg' })}>
-                            Install now, Its Free
-                        </a>
-                        <a href={GITHUB_REPO_URL} className={buttonVariants({ size: 'lg', variant: 'whiteOutline' })}>
+                        <a href={GITHUB_REPO_URL} className={buttonVariants({ size: 'lg', variant: 'white' })}>
                             Checkout On Github
                         </a>
                     </div>
